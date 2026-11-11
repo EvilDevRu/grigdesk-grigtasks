@@ -1,0 +1,24 @@
+{
+  "id": "grigdesk-tasks",
+  "name": "GrigTasks",
+  "version": "0.1.0",
+  "contract": 1,
+  "settings": {
+    "baseUrl": {
+      "type": "string",
+      "required": true,
+      "label": {
+        "text": "GrigTasks HTTPS URL"
+      }
+    },
+    "apiToken": {
+      "type": "string",
+      "format": "api-token",
+      "secret": true,
+      "required": true,
+      "label": {
+        "key": "core.trackerAccessToken"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "grigdesk-tasks-driver",
+  "version": "0.1.0",
+  "description": "GrigTasks driver for GrigDesk TaskTracker contract 1",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "exports": {
+    ".": "./driver.ts"
+  },
+  "files": [
+    "driver.json",
+    "driver.ts",
+    "src",
+    "types",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "bash scripts/test-safe.sh tests/*.test.mts",
+    "test:one": "bash scripts/test-safe.sh",
+    "test:integration": "node scripts/integration.mjs",
+    "typecheck": "tsc --noEmit",
+    "pack:check": "npm pack --dry-run",
+    "build": "npm run typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvilDevRu/grigdesk-grigtasks.git"
+  },
+  "homepage": "https://github.com/EvilDevRu/grigdesk-grigtasks#readme"
+}
